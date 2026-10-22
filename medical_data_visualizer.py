@@ -51,6 +51,7 @@ def draw_heat_map():
         (df['weight'] >= df['weight'].quantile(0.025)) &
         (df['weight'] <= df['weight'].quantile(0.975))
     ]
+    
 
     # 12
     corr = df_heat.corr()
